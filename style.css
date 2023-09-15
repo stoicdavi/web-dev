@@ -1,0 +1,41 @@
+/*Element selector*/
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+h1{
+    font-size: 1.6rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+h4{
+    font-size: 1.1rem;
+}
+/*Class selector*/
+.edu{
+    color: blue;
+}
+/*Id Selector*/
+#zed{
+    color: brown;
+}
+/*pseudo-classes selector*/
+a:hover{
+    background-color: yellow;
+}
+a:visited{
+    color: black;
+}
+#Social-media{
+    color: blue;
+}
+.experience{
+    font-style: italic;
+}
+a:link{
+    color: green;
+}
