@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ice Cream Empire</title>
+    </head>
+    <body>
+        <script>
+            // Define an array of ice cream flavors with name, type, and price.
+            let iceCreamFlavors = [
+                { name: "Chocolate", type: "Chocolate", price: 2 },
+                { name: "Strawberry", type: "Fruit", price: 1 },
+                { name: "Vanilla", type: "Vanilla", price: 2 },
+                { name: "Pistachio", type: "Nuts", price: 1.5 },
+                { name: "Neapolitan", type: "Chocolate", price: 2 },
+                { name: "Mint Chip", type: "Chocolate", price: 1.5 },
+                { name: "Raspberry", type: "Fruit", price: 1 },
+            ];
+
+            // Initialize an array called transactions to store ice cream purchases.
+            let transactions = [];
+
+            // Add transactions to the transactions array.
+            transactions.push({ scoops: ["Chocolate", "Vanilla", "Mint Chip"], total: 5.5 });
+            transactions.push({ scoops: ["Raspberry", "Strawberry"], total: 2 });
+            transactions.push({ scoops: ["Vanilla", "Vanilla"], total: 4 });
+
+            // Calculate the total revenue by summing up the total values in transactions.
+            const total = transactions.reduce((acc, curr) => acc + curr.total, 0);
+            
+            // Display the total revenue in the console.
+            console.log(`You've made $${total.toFixed(2)} today`); // Example output: You've made $11.50 today  
+
+            // Calculate the distribution of ice cream flavors sold.
+            let flavorDistribution = transactions.reduce((acc, curr) => {
+                curr.scoops.forEach(scoop => {
+                    if (!acc[scoop]) {
+                        acc[scoop] = 0;
+                    }
+                    acc[scoop]++;
+                });
+                return acc;
+            }, {}); // Example output: { Chocolate: 1, Vanilla: 3, Mint Chip: 1, Raspberry: 1, Strawberry: 1 }
+        </script>
+    </body>
+</html>
