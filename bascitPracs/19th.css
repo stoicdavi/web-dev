@@ -1,0 +1,17 @@
+h1{
+    color:blue;
+    text-align: center;
+}
+body{
+    background-color: chartreuse;
+    background-image: url(la2.jpg);
+    
+}
+.welcome{
+    text-align: center;
+    font-style: italic;
+}
+#video1{
+    width: 500;
+    height: 500;
+}
