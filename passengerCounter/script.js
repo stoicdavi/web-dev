@@ -8,5 +8,5 @@ function increment()
     document.getElementById("number").innerText = count;
 }
 function save(){
-    console.log("Result Saved")
+    console.log(count)
 }

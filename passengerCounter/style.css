@@ -1,0 +1,23 @@
+body{
+    background-color: greenyellow;
+    }
+h1{
+    text-align: center;
+    font-size: large;
+    color: blue;
+}
+h2{
+    color: blueviolet;
+    text-align: center;
+}
+#Increment-btn{
+    align-self: center;
+    background-color: red;
+    padding: 20px;
+    cursor: pointer;
+}
+#save-btn{
+    background-color: bisque;
+    cursor: grab;
+    padding: 20px;
+}
