@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deans-ecomerce website</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 </head>
-<body id="body">
-    <div id="title-div">
+<body class="light-theme">
+        <div id="title-div">
+            <div ><button class="btn">Dark</button></div>
         <div class="logo">
             <img src="logo.png" alt="website logo" width="100px">
         </div>
@@ -16,18 +18,65 @@
         <div class="navdiv">
             <nav class="navbar">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
+                    
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="">Contacts</a></li>
-                    <li><a href="">Account</a><li>
+                    <li><a href="account.html">Account</a><li>
+                        <img src="photos/cart2.png" alt="cart" height="30px" width="30px">
                 </ul>
                </nav>
-               <p><marquee behavior="alternate">Welcome to dean's-e-comerce website</marquee></p>
+               
+               <p style="color: orange; font-size: large;"><marquee behavior="alternate">Welcome to dean's-e-comerce website</marquee></p>
         </div>
        
     </div>
-    <div></div>
+    <div class="row">
+        <div class="column-1">
+            <h1>Get A brand new gadget for your use<br>Style your living room!</h1>
+            <p>Feel free to explore our website<br>and ask for any electronic device</p>
+            <button class="butn"><a href="products.html">Explore our store &rAarr;</a></button>
+        </div >
+        <div class="column-1">
+            <img src="photos/hom1.png" alt="my collections">
+        </div>
+    </div>
+    <!--featured product-->
+    <div class="categories">
+        <div class="featured">
+            <div class="row">
+                <div class="column-2">
+                        <img src="photos/laptop1.png" alt="laptop">
+                </div>
+                <div class="column-2">
+                        <img src="photos/camera.png" alt="camera">
+                </div>
+                <div class="column-2">
+                        <img src="photos/tablet1.png" alt="tablets">
+                </div>    
+               
+            </div>
+        </div>
+    </div>
+    <div class="featured">
+        <h3>Featured products</h3>
+        <div class="column-3">
+            <img src="photos/smartwatch.png" alt="watch">
+            <h4>Android Smart Watch</h4>
+            <p>Ksh. 5000</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
     <script src="index.js"></script>
 </body>
 </html>
