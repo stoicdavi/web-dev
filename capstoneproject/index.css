@@ -43,7 +43,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
-
+    position: relative;
     background-color: rgb(47, 7, 206);
     width: auto;
     height: auto;
@@ -225,14 +225,15 @@ nav ul li{
     width: auto;
 }
 /**           cart css         **/
-.caat{
+.cart{
     position: fixed;
     top: 160px;
     right: 0;
     width: 100x;
-    margin-right: 80PX;
+    margin-right: 0;
     background-color: blueviolet;
     box-shadow: #00FF00;
+    transition: 0.4s;
 }
 .cart-t{
     text-align: center;
@@ -273,11 +274,18 @@ nav ul li{
     transition: 0.6s;
 }
 .close-cart{
-    align-self: center;
+    align-self: absolute;
+    top: 1rem;
+    right: 0.8rem
+
+
     }
 .close-cart:hover{
     background-color: red;
 }
-.caat:active{
-    
+.cart:active{
+    right: 0;
 }
+
+
+ 
