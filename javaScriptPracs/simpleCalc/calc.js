@@ -27,7 +27,3 @@ function multiply(){
     result = num1 * num2
     document.getElementById('sum-el').textContent = "Multiplication : " + result
 }
-Low response time leading to delayed service provision
-- Concurrency issues resulting from multiple users accessing the same database simultaneously, leading to data conflicts
-- Slow query execution due to the growing number of database users and operations
-- Data inconsistency caused by a lack of referential integrity in the database design.
