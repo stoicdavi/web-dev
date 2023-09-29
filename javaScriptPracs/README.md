@@ -1,1 +1,1 @@
-This is a pasenger counter project, counts number of passengers entering the terminus
+This repo contains my javaScript practical work
