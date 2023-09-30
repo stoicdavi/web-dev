@@ -61,7 +61,7 @@ function renderGame()
 }
 
 function drawaNew(){
+    play();
     sum += thirdNumber
     document.getElementById('cards').textContent= "Cards: " + card[0] +" "+ card[1] +" "+ thirdNumber
-    play();
 }
