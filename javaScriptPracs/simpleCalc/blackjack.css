@@ -17,6 +17,7 @@ button{
     padding: 10px;
     border: none;
     border-radius: 4px;
+    margin-bottom: 2px;
  }
  p{
     font-style: italic;
