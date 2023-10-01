@@ -1,0 +1,26 @@
+*{
+    margin:auto;
+    padding: auto;
+
+}
+body{
+    max-width: 80%;
+    text-align: center;
+    background-color: aquamarine;
+    color: blue;
+    
+    
+}
+image{
+    width: 100%S;
+}
+h3{
+    margin: 6PX;
+}
+div{
+    background-image: url("bg2.png");
+    color: yellow;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: large;
+}
