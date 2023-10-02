@@ -8,11 +8,11 @@ body{
     text-align: center;
     background-color: aquamarine;
     color: blue;
-    
-    
+    font-family: 'monospace';  
+     
 }
 image{
-    width: 100%S;
+    width: 100%;
 }
 h3{
     margin: 6PX;
@@ -31,4 +31,13 @@ a{
 
 a:hover{
     color: blue;
+}
+p{
+    margin: 3px;
+}
+.list-ul{
+    list-style:circle;
+}
+#body-love{
+    background-image: url(bg2.png);
 }
