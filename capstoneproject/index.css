@@ -6,7 +6,7 @@
 }
 :root{
     --green: #00FF00;
-    --white: #FFFFFF;
+    --white: #da8b8b;
     --black: #000000;
 }
 body{
@@ -39,6 +39,7 @@ body{
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
+
 #title-div{
     display: flex;
     align-items: center;
@@ -53,6 +54,9 @@ body{
     text-align: center;
     color:#FFFFFF;
     word-spacing: 6px;
+}
+.featured{
+    
 }
 .head1{
     display:flex;
@@ -76,6 +80,7 @@ a{
     padding: auto;
     margin-right: 10px;
 }
+
 .logo img{
     border-radius: 20%;
 }
