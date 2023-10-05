@@ -14,28 +14,7 @@ switcher.addEventListener('click', function(){
     console.log('Current class name\t' + className)
 });
 
-let cartIcone = document.querySelector('.cart-icon');
-let cart = document.querySelector('.caat');
-let closeCart = document.querySelector('.close-cart');
 
-cartIcone.onclick = () => {
-    cart.classList.add('active'); // Toggle the "active" class
-};
-
-cartIcone.onclick = () => {
-    cart.classList.remove('active'); // Toggle the "active" class
-};
-
-if (document.readyState == "loading"){
-    document.addEventListener("DOMContentLoaded",ready);
-}else{
-    ready();
-}
-function ready(){
-    var removeCartButtons =document.getElementsByClassName('removecart')
-    console.log(removeCartButtons)
-    for (var i = 0;i < removeCartButtons.length; i++){
-        var cartBox = cartBoxes[1]
-        var priceElement =cartBox.getElementsByClassName('class-price')[0]
-    }
+function buy(){
+    console.log('hey')
 }
