@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust the width as needed */
+}
+
+#tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tablinks {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 4px 4px 0 0;
+}
+
+.tablinks:hover {
+    background-color: #45a049;
+}
+
+.tablinks.active {
+    background-color: #45a049;
+}
+
+.tabcontent {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Added margin to the bottom of each form */
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Added margin-bottom */
+    display: block; /* Ensures each button is on a new line */
+    width: 100%; /* Makes the buttons fill the width of the container */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+.active {
+    border-radius: 4px 4px 0 0;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="tabs">
+        <button class="tablinks" onclick="openTab('SignIn')">Sign In</button>
+        <button class="tablinks" onclick="openTab('SignUp')">Sign Up</button>
+    </div>
+
+    <div id="SignIn" class="tabcontent">
+        <h2>Sign In</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="signInWithFacebook()">Log in with Facebook</button>
+            <button type="button" onclick="signInWithGoogle()">Log in with Google</button>
+            <button type="button" onclick="signInWithTwitter()">Log in with Twitter</button>
+
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+
+    <div id="SignUp" class="tabcontent">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <button type="button" onclick="signUpWithFacebook()">Sign up with Facebook</button>
+            <button type="button" onclick="signUpWithGoogle()">Sign up with Google</button>
+            <button type="button" onclick="signUpWithTwitter()">Sign up with Twitter</button>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openTab(tabName) {
+        var i;
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        event.currentTarget.classList.add("active");
+    }
+
+    function signInWithFacebook() {
+        alert("Signing in with Facebook");
+    }
+
+    function signInWithGoogle() {
+        alert("Signing in with Google");
+    }
+
+    function signInWithTwitter() {
+        alert("Signing in with Twitter");
+    }
+
+    function signUpWithFacebook() {
+        alert("Signing up with Facebook");
+    }
+
+    function signUpWithGoogle() {
+        alert("Signing up with Google");
+    }
+
+    function signUpWithTwitter() {
+        alert("Signing up with Twitter");
+    }
+
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Logging in with username: " + document.getElementById("username").value);
+    });
+
+    document.getElementById("signupForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Signing up with username: " + document.getElementById("newUsername").value);
+    });
+</script>
+
+</body>
+</html>

@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT US </title>
+    <link rel="stylesheet" href="index.css">
     <style>
-        * {
-  box-sizing: border-box;
-}
+      
 
 /* Style inputs */
 input[type=text], select, textarea {
@@ -34,7 +33,7 @@ input[type=submit]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  
   padding: 10px;
 }
 
@@ -52,9 +51,66 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
+
+/*drop down */
+    /* Style for the dropdown container */
+    .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the dropdown button */
+        .dropdown-btn {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Style for the individual dropdown items */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Show the dropdown content when the button is hovered */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
-<body>
+<body class="light-theme">
+  <div class="dropdown">
+    <!-- Dropdown button -->
+    <button class="dropdown-btn">Select an option</button>
+    
+    <!-- Dropdown content -->
+    <div class="dropdown-content">
+        <!-- Dropdown items -->
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="#">Option 3</a>
+    </div>
+
+</div>
     <div class="container">
         <div style="text-align:center">
           <h2>Contact Us</h2>
@@ -62,7 +118,7 @@ input[type=submit]:hover {
         </div>
         <div class="row">
           <div class="column">
-            <img src="/w3images/map.jpg" style="width:100%">
+            <img src="photos/contactus.png" style="width:100%; border-radius: 20px;">
           </div>
           <div class="column">
             <form action="/action_page.php">
@@ -70,11 +126,19 @@ input[type=submit]:hover {
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="region">Region</label>
+              <select name="region" id="region" placeholder="select a region">
+                <option value="" disabled selected>Select a region</option>
+                <option value="west">West Africa</option>
+                <option value="East">East Africa</option>
+                <option value="South">South Africa</option>
+              </select>
               <label for="country">Country</label>
               <select id="country" name="country">
-                <option value="australia">KENYA</option>
-                <option value="canada">UGANDA</option>
-                <option value="usa">ETHIOPIA</option>
+                <option value="" disabled selected>Select a country</option>
+                <option value="Kenya">KENYA</option>
+                <option value="Uganda">UGANDA</option>
+                <option value="Ethiopia">ETHIOPIA</option>
               </select>
               <label for="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
@@ -82,6 +146,18 @@ input[type=submit]:hover {
             </form>
           </div>
         </div>
+        <hr>
+        <footer class="width-90" data-v-27b98b2e="" data-v-a21654fa="">
+          <div class="row" data-v-27b98b2e="">
+              <div class="col-md-6" data-v-27b98b2e="">
+                  <ul class="quick-links" data-v-27b98b2e=""><li data-v-27b98b2e="">
+                      <a href="/about-us" data-v-27b98b2e="" class=""> About</a></li>
+                      <li data-v-27b98b2e=""><a href="/faqs" data-v-27b98b2e="" class=""> FAQS</a></li>
+                      <li data-v-27b98b2e=""><a href="/privacy-policy" data-v-27b98b2e="" class=""> Privacy Policy</a></li>
+                      <li><a href="nanjiladavid2@gmail.com"> Contact Us</a></li>
+                  </ul>
+              </div> <div class="col-md-6" data-v-27b98b2e=""><ul class="social-media" data-v-27b98b2e=""></ul></div></div>
+              </footer>
       </div>
 
 </body>

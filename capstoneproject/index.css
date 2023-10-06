@@ -55,9 +55,7 @@ body{
     color:#FFFFFF;
     word-spacing: 6px;
 }
-.featured{
-    
-}
+
 .head1{
     display:flex;
     text-align: right;
@@ -126,13 +124,14 @@ nav ul li{
 
 }
 .product-1 img{
-    width: 130;
+    width: 220;
     height: 100;
+    border-radius: 5px;
 }
-.product-1:hover{
-    padding: 10px;
+.product-1 img:hover{
+    padding: 2px;
     background-color: gray;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .p{
     display: flex;
@@ -193,7 +192,7 @@ nav ul li{
 .butn:hover{
     color: rgb(226, 43, 153);
     background: #00FF00;
-    transition: background 1s;
+    transition: 1s;
    
 }
 .categories{
@@ -291,6 +290,28 @@ nav ul li{
 .cart:active{
     right: 0;
 }
+/***************************** FOOTERS ******************************/
+footer {
+    text-align: center;
+    
+    background-color:  #da8b8b;
+    color: white;
+    bottom: 0;
+   
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .quick-links{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 30px;
+  }
+  .quick-links li{
+      padding-left: 10px;
+      list-style: none;
+  
+  }
 
 
  
