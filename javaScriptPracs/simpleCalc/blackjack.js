@@ -23,7 +23,11 @@ function renderGame()
 {
     //checkin whether the user has a blacjack 
     if (sum < 21){
-    cardsEl.textContent= "Cards: " + card[0] +" "+ card[1]
+    cardsEl.textContent= "Cards: "
+    for(let i = 0; i < card.length; i++)
+    {
+        cardsEl.textContent += card[i] + " "
+    }
     document.getElementById('dplay').textContent = "Do you want to draw another card? 😊"
     document.querySelector("#sum").textContent = "Your Score: "+ sum//using query selector instead of getElementById
     isAlive = true
@@ -62,6 +66,8 @@ function renderGame()
 
 function drawaNew(){
     play();
-    sum += thirdNumber
-    document.getElementById('cards').textContent= "Cards: " + card[0] +" "+ card[1] +" "+ thirdNumber
+    let card3= 8
+    card.push(card3)
+    renderGame()
+    
 }
