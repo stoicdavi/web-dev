@@ -14,14 +14,82 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <style>
-      .product-1 {
-        margin-bottom: 20px;
-      }
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+} 
+
+    
+    
     </style>
   </head>
   <body class="light-theme">
+    
     <a name="home"></a>
     <div id="title-div">
       <div><button class="btn">Dark</button></div>
@@ -35,7 +103,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
             <li><a href="account.html">Account</a></li>
             <img src="photos/cart2.png" alt="cart" height="30px" width="30px" />
           </ul>
@@ -44,6 +112,10 @@
           <marquee behavior="alternate">Welcome to our products page</marquee>
         </p>
       </div>
+    </div>
+    <div class="topnav">
+      <input type="text" placeholder="Search..">
+      <button type="submit">Submit</button>
     </div>
 
     <div>
@@ -75,7 +147,7 @@
       </div>
 
       <div class="product-1">
-        <img src="photos/watch2.png" />
+        <img src="photos/watch2.png" class="pro-img"/>
         <div class="pro-name">Samsung Smart watch</div>
         <span class="price">Ksh. 3500</span>
         <img
@@ -87,7 +159,7 @@
         />
       </div>
       <div class="product-1">
-        <img src="photos/watch2.png"  />
+        <img src="photos/watch2.png"  class="pro-img"/>
         <div class="pro-name">Samsung Smart watch</div>
         <span class="price">Ksh. 3500</span>
         <img
@@ -96,6 +168,7 @@
           height="30px"
           width="30px"
           onclick="buy()"
+          
         />
         <p>
             <span class="heading">Rating</span>
@@ -108,25 +181,25 @@
        
       </div>
       <div class="product-1">
-        <img src="photos/smartwatch.png"  />
+        <img src="photos/smartwatch.png" class="pro-img" />
         <div class="pro-name">Samsung Smart watch</div>
         <span class="price">Ksh. 3500</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
       </div>
       <div class="product-1">
-        <img src="photos/smartp.png" width="300px" />
+        <img src="photos/smartp.png" class="pro-img"/>
         <div class="pro-name">Samsung Smart watch</div>
         <span class="price">Ksh. 3500</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
       </div>
       <div class="product-1">
-        <img src="photos/watch2.png" width="100" height="120" />
+        <img src="photos/watch2.png" class="pro-img" />
         <div class="pro-name">Samsung Smart watch</div>
         <span class="price">Ksh. 3500</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
       </div>
       <div class="product-1">
-        <img src="photos/watch2.png" width="100" height="120" />
+        <img src="photos/watch2.png" class="pro-img"/>
         <div class="pro-name">Samsung Smart watch</div>
         <span class="price">Ksh. 3500</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
@@ -135,13 +208,13 @@
     <h1 style="text-align: center">Smart Phones</h1>
     <div class="p">
       <div class="product-1">
-        <img src="photos\spark10pro.png" width="100" height="120" />
+        <img src="photos\spark10pro.png" class="pro-img"/>
         <div class="pro-name">Tecno Spark 10 Pro</div>
         <span class="price">Ksh. 22,999</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
       </div>
       <div class="product-1">
-        <img src="photos/samA14.png" width="100" height="120" />
+        <img src="photos/samA14.png" class="pro-img"/>
         <div class="pro-name">Samsung Galaxy A14 4G</div>
         <span class="price">Ksh. 21,349</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
@@ -149,19 +222,20 @@
         <i class="fa-duotone fa-star"></i>
       </div>
       <div class="product-1">
-        <img src="photos/infixsmart.png" width="100" height="120" />
+        <img src="photos/infixsmart.png" class="pro-img"/>
         <div class="pro-name">Infinix Smart 7 HD, 6.6</div>
         <span class="price">Ksh. 11,599</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
       </div>
       <div class="product-1">
-        <img src="photos/tecnoSpa10.png" width="100" height="120" />
+        <a href="watches.html"><img src="photos/tecnoSpa10.png"  class="pro-img"/></a>
         <div class="pro-name">Tecno Spark 10C</div>
         <span class="price">Ksh. 17,499</span>
         <box-icon name="cart-add" class="cart-icon"></box-icon>
         <i class="fa-duotone fa-star"></i>
       </div>
     </div>
+    <hr color="green"> 
     <div style="padding-bottom: 20px"><a href="#home">To the top</a></div>
 
     <script src="index.js"></script>

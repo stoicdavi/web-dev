@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deans-ecomerce website</title>
     <link rel="stylesheet" href="index.css" />
+   
+    <style>
+      .fp{
+        height: 300px;
+        border-radius: 10px;
+        width: 200px;
+      }
+    </style>
   </head>
   <body class="light-theme">
     <a name="Top"></a>
@@ -21,7 +29,7 @@
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="account.html">Account</a></li>
-            <li><a href="contacts.html">CONTACT US</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
 
               <img
                 src="photos/cart2.png"
@@ -54,7 +62,7 @@
         </button>
       </div>
       <div class="column-1">
-        <img src="photos/hom1.png" alt="my collections" />
+                <img src="photos/hom1.png" />
       </div>
     </div>
     <!--featured product-->
@@ -62,13 +70,16 @@
       <div class="featured">
         <div class="row">
           <div class="column-2">
-            <img src="photos/laptop1.png" alt="laptop" />
+           <a href="productsDescription/laptops.html"><img src="photos/laptop1.png" alt="laptop" class="fp"/></a>
+           <p>Laptops</p>
           </div>
           <div class="column-2">
-            <img src="photos/camra2.png" alt="camera" />
+           <a href="productsDescription/cameras.html"><img src="photos/camra2.png" alt="camera" class="fp"/></a> 
+            <p>Cameras</p>
           </div>
           <div class="column-2">
-            <img src="photos/tablet1.png" alt="tablets" />
+            <img src="photos/tablet1.png" alt="tablets" class="fp"/>
+            <p>Tablets </p>
           </div>
         </div>
       </div>
@@ -76,11 +87,7 @@
     <div class="featured">
       <h3>Featured products</h3>
       <div class="column-3">
-        <img
-          src="photos/smartwatch.png"
-          alt="watch"
-          style="padding-bottom: 20px"
-        />
+        <a href="productsDescription/watches.html"><img src="photos/smartwatch.png" class="fp"/></a>
         <h4>Android Smart Watch</h4>
         <p>Ksh. 5000</p>
         <div class="rating">
@@ -93,7 +100,7 @@
       </div>
 
       <div class="column-3">
-        <img src="photos/smartp.png" alt="watch" style="padding-bottom: 20px" />
+        <img src="photos/smartp.png" alt="watch" class="fp" />
         <h4>Android Smart Watch</h4>
         <p>Ksh. 5000</p>
         <div class="rating">
@@ -105,13 +112,17 @@
         </div>
       </div>
     </div>
-    <div style="padding-bottom: 50px; padding-left: 50px">
+    <hr color="green">
+    <div style="margin-bottom: 20px; margin-right: 10px;">
       <p style="text-align: right">
         <a href="#Top" style="color: blue">Go To the top</a>
       </p>
     </div>
   
       <script type="module">
+
+
+
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
