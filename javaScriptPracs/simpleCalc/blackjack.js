@@ -13,6 +13,13 @@ let message = ''
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum")
 let cardsEl = document.getElementById("cards")
+let playerEl= document.getElementById("player-l")
+
+let player={
+    name: "David",
+    age: 12,
+}
+playerEl.textContent += " Name: "+ player.name +" age :" + player.age
 
 function getRandomCard(){
     let randomNumber = Math.floor(Math.random() * 12) + 1
@@ -64,8 +71,12 @@ function renderGame()
 }
 
 function drawaNew(){
-    let card3 = getRandomCard()
-    card.push(card3) 
-    sum += card3
-    renderGame()
+    if(isAlive=== true && hasBlacjack === false)
+    {
+        let card3 = getRandomCard()
+        card.push(card3) 
+        sum += card3
+        renderGame()
+    }
+    
 }
