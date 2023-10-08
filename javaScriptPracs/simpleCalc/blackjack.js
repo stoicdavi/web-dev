@@ -49,19 +49,7 @@ function renderGame()
     if (hasBlacjack){
     document.getElementById('who').textContent = 'you won cash amounting to ksh 100,000'
     }
-    else{
-        document.getElementById('who').textContent = 'no Win'
-    }
-
-    if (isAlive){
-        document.getElementById('alive').textContent = "you are still alive"
-    }
-    else if(isAlive && hasBlacjack){
-        document.querySelector('#alive').textContent = "You Won!"
-    }
-    else{
-        document.getElementById('alive').textContent = 'You are done!'
-    }
+   
 }
 
 function drawaNew(){
