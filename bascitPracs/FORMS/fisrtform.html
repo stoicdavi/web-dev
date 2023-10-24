@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+ <form>
+    <h1>My FeedBack Form</h1>
+    <ul>
+   <li> <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name"></li>
+    <br>
+    <li><label for="Email">Email:</label>
+    <input type="text" placeholder="Enter your email"></li>
+    <br>
+    <li><label for="Email">Password :</label>
+    <input type="password" placeholder="Enter your password"></li>
+    <br>
+    <br>
+    <li>Please check all the emotions that apply to you</li>
+    <p>
+        <ul>
+          <li><label for="Angry">Angry</label>
+            <input type="checkbox" id="Angry" name="Angry" value="value1">
+            </li>  
+            <li><label for="checkbox1">Sad</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="value1"></li>
+         <li><label for="happy" id="happy" value="value1">Happy </label>
+            <input type="checkbox"></li>
+     </ul>
+    </p>
+    <li>How satisfied were you with our services?</li>
+    <p><ul>
+        <li><label for="vsatisfied">Very satisfied</label>
+        <input type="radio" id="vsatisfied" name="satisfaction" value="very_satisfied"></li>
+        <li><label for="satisfied">Satisfied</label>
+        <input type="radio" id="satisfied" name="satisfaction" value="satisfied"></li>
+        <li><label for="Dcare">Didn't care</label>
+            <input type="radio" id="Dcare" name="satisfaction" value="Dcare"></li>
+            <li><label for="Dissatisfied">Dissatisfied</label>
+                <input type="radio" id="Dissatisfied" name="satisfaction" value="Dissatisfied"></li>
+                <li><label for="Very_dissatisfied">Very Dissatisfied</label>
+                    <input type="radio" id="Very_dissatisfied" name="satisfaction" value="Very_dissatisfied"></li>
+    </ul></p>
+    <li><label for="F_comments">Further comments:</label><textarea cols="40" rows="2"></textarea></li>
+    <li><label for="Bio_data">Bio photo</label><input type="file">
+    </li>
+    <li>
+        <label for="select">Plaace Visited</label>
+        <li><select >
+            <option value="nkr" name="county">Nakuru
+            <option value="nrb" name="county">Nairobi
+            <option value="ksm" name="county">Kisumu
+            <option value="mbs" name="county">Mombasa
+            <option value="kiambu" name="county">Kiambu
+            </select></li>
+
+</ul>
+<input type="submit" name="submit" id="submit">
+ </form> 
+</body>
+</html>
