@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function age(yb, cy){
+            return cy - yb;
+        }
+        function calculateAge(){
+            yb = prompt("Enter your birth year :");
+            cy = prompt("Enter current year :");
+            alert("Age"+age(yb,cy) )
+            const currentYear = new Date().getFullYear();
+            console.log(currentYear);
+        }
+    </script>
+</head>
+<body bgcolor="blueviolet" onload="calculateAge()">
+  
+</body>
+</html>

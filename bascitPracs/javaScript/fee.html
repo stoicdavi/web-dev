@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Javascript Calculator</title>
+<script language="javascript">
+function sum()
+{
+    a=Number(document.calculate.number1.value)
+    b=Number(document.calculate.number2.value)
+    c=a+b
+    document.calculate.total.value=c
+}
+function diff()
+{
+    a=Number(document.calculate.number1.value)
+    b=Number(document.calculate.number2.value)
+    c=a-b
+    document.calculate.total.value=c
+}
+</script>
+</head>
+<body bgcolor="lime">
+<form name="calculate">
+First Number: <input type="text" name="number1"> </p>
+Second Number: <input type="text" name="number2"> </p>
+<input type="button" size="4" value="SUM" onclick="javascript:sum()"></p>
+<input type="button" size="4" value="DIFFERENCE" onclick="javascript:diff()"></p>
+Result is: <input type="text" name="total"> </p>
+</form>
+</body>
+</html>
