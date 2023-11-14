@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(name){
+            var check = /^[a-zA-Z]+$/;
+            if(check.test(name.value)){
+                alert("Valid");
+                return true;
+            }
+            else{
+                alert("Invalid enter only characters");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="lightgreen">
+    <form name="David">
+        <input type="text" name="name">
+        <input type="submit" value="Submit" name="submit" onclick="validate(document.David.name)" > 
+    </form>
+</body>
+</html>
